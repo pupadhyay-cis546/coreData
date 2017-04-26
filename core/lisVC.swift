@@ -8,12 +8,11 @@
 
 import UIKit
 
-var list = ["abc", "def", "ghi", "jkl"]
-
+    var list = ["abc", "def", "ghi", "jkl"]
 
 class lisVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var list = ["abc", "def", "ghi", "jkl"]
+  // var list = ["abc", "def", "ghi", "jkl"]
 
     
     @IBOutlet weak var myTableView: UITableView!
@@ -37,7 +36,7 @@ class lisVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     {
         if editingStyle == UITableViewCellEditingStyle.delete
         {
-            self.list.remove(at: indexPath.row)
+           list.remove(at: indexPath.row)
             myTableView.reloadData()
         }
     }
