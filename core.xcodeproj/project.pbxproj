@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911C2FA01EB08071008A0D40 /* taskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C2F9F1EB08071008A0D40 /* taskVC.swift */; };
 		91DBAEF81EADD08D0057915C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DBAEF71EADD08D0057915C /* AppDelegate.swift */; };
-		91DBAEFA1EADD08D0057915C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DBAEF91EADD08D0057915C /* ViewController.swift */; };
+		91DBAEFA1EADD08D0057915C /* lisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DBAEF91EADD08D0057915C /* lisVC.swift */; };
 		91DBAEFD1EADD08D0057915C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DBAEFB1EADD08D0057915C /* Main.storyboard */; };
 		91DBAF001EADD08D0057915C /* core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91DBAEFE1EADD08D0057915C /* core.xcdatamodeld */; };
 		91DBAF021EADD08D0057915C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DBAF011EADD08D0057915C /* Assets.xcassets */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911C2F9F1EB08071008A0D40 /* taskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskVC.swift; sourceTree = "<group>"; };
 		91DBAEF41EADD08D0057915C /* core.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DBAEF71EADD08D0057915C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91DBAEF91EADD08D0057915C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91DBAEF91EADD08D0057915C /* lisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lisVC.swift; sourceTree = "<group>"; };
 		91DBAEFC1EADD08D0057915C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91DBAEFF1EADD08D0057915C /* core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = core.xcdatamodel; sourceTree = "<group>"; };
 		91DBAF011EADD08D0057915C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				91DBAEF71EADD08D0057915C /* AppDelegate.swift */,
-				91DBAEF91EADD08D0057915C /* ViewController.swift */,
+				91DBAEF91EADD08D0057915C /* lisVC.swift */,
+				911C2F9F1EB08071008A0D40 /* taskVC.swift */,
 				91DBAEFB1EADD08D0057915C /* Main.storyboard */,
 				91DBAF011EADD08D0057915C /* Assets.xcassets */,
 				91DBAF031EADD08D0057915C /* LaunchScreen.storyboard */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DBAEFA1EADD08D0057915C /* ViewController.swift in Sources */,
+				91DBAEFA1EADD08D0057915C /* lisVC.swift in Sources */,
 				91DBAF001EADD08D0057915C /* core.xcdatamodeld in Sources */,
 				91DBAEF81EADD08D0057915C /* AppDelegate.swift in Sources */,
+				911C2FA01EB08071008A0D40 /* taskVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +515,7 @@
 				91DBAF211EADD08D0057915C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91DBAF221EADD08D0057915C /* Build configuration list for PBXNativeTarget "coreTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				91DBAF241EADD08D0057915C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91DBAF251EADD08D0057915C /* Build configuration list for PBXNativeTarget "coreUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				91DBAF271EADD08D0057915C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

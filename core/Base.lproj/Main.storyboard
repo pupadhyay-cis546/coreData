@@ -12,7 +12,7 @@
         <!--Item 2-->
         <scene sceneID="w1Q-8K-UBT">
             <objects>
-                <viewController id="knb-Sj-88J" sceneMemberID="viewController">
+                <viewController id="knb-Sj-88J" customClass="taskVC" customModule="core" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ORi-Qm-9r6"/>
                         <viewControllerLayoutGuide type="bottom" id="GJx-xK-Kxn"/>
@@ -20,18 +20,38 @@
                     <view key="view" contentMode="scaleToFill" id="Asg-G8-OXB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oup-d2-ABI">
+                                <rect key="frame" x="57" y="181" width="207" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlC-ge-9cv">
+                                <rect key="frame" x="129" y="246" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add item"/>
+                                <connections>
+                                    <action selector="addItem:" destination="knb-Sj-88J" eventType="touchUpInside" id="xSt-yQ-KH2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="aor-AB-Lth"/>
+                    <connections>
+                        <outlet property="inpuy" destination="oup-d2-ABI" id="smS-7F-hid"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5y-ua-GNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="539"/>
+            <point key="canvasLocation" x="1571.25" y="538.73239436619724"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="C4g-06-xPo">
             <objects>
-                <viewController id="cME-Wp-uWD" sceneMemberID="viewController">
+                <viewController id="cME-Wp-uWD" customClass="lisVC" customModule="core" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KRQ-4P-a8m"/>
                         <viewControllerLayoutGuide type="bottom" id="ONi-JN-bY7"/>
@@ -53,6 +73,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cME-Wp-uWD" id="LRg-ic-QK5"/>
+                                    <outlet property="delegate" destination="cME-Wp-uWD" id="0X9-Xb-mtM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,6 +88,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="QF4-5i-Eb7"/>
+                    <connections>
+                        <outlet property="myTableView" destination="pWc-jV-j1M" id="I2t-gk-NYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RN-TM-g9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
