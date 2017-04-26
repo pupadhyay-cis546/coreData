@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					91DBAEF31EADD08D0057915C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JZ5863E54E;
 						ProvisioningStyle = Automatic;
 					};
 					91DBAF0A1EADD08D0057915C = {
@@ -422,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JZ5863E54E;
 				INFOPLIST_FILE = core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.db.core;
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JZ5863E54E;
 				INFOPLIST_FILE = core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.db.core;

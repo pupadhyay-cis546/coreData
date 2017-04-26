@@ -41,6 +41,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="aor-AB-Lth"/>
                     <connections>
+                        <outlet property="input" destination="oup-d2-ABI" id="GwD-VW-Lfu"/>
                         <outlet property="inpuy" destination="oup-d2-ABI" id="smS-7F-hid"/>
                     </connections>
                 </viewController>
