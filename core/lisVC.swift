@@ -40,6 +40,10 @@ class lisVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             myTableView.reloadData()
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myTableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
