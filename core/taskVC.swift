@@ -21,6 +21,7 @@ class taskVC: UIViewController {
             list.append(self.input.text!)
             self.input.text = ""
         }
+        saveNotice()
     }
     
     
@@ -35,6 +36,13 @@ class taskVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func saveNotice()
+    {
+        let alertController = UIAlertController(title: "Task Saved!", message: "Task saved successfully", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
